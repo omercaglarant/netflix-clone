@@ -1,18 +1,12 @@
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
-
-
-// Select tab content item 
-
 function selectItem(e) {
     removeBorder();
     removeShow();
-    // Add border to current tab
     this.classList.add('tab-border');
     const tabContentItem = document.querySelector(`#${this.id}-content`);
     tabContentItem.classList.add('show');
-
 }
 
 function removeBorder() {
@@ -25,5 +19,5 @@ function removeShow() {
 
 
 
-// Listen for tab click
-tabItems.forEach(item => item.addEventListener('click', selectItem))
+// Tıklamaları gözle
+tabItems.forEach(item => item.addEventListener('click', selectItem));
