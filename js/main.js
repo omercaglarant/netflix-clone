@@ -7,6 +7,7 @@ function selectItem(e) {
     this.classList.add('tab-border');
     const tabContentItem = document.querySelector(`#${this.id}-content`);
     tabContentItem.classList.add('show');
+    
 }
 
 function removeBorder() {
